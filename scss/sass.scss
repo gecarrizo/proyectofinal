@@ -1,0 +1,67 @@
+/*Var*/
+
+$imgs: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
+$labelProd: 'Producto Pintura';
+
+$color-boton-aceptar: rgb(15, 189, 117);
+$color-boton-cancelar: rgb(238, 50, 50);
+
+$color-base: #036;
+$linkcolour: #0000FF;
+
+@each $img in $imgs{
+    .divProducto#{$img}{
+        background-image: url(../imagenes/productoPintura#{$img}.jpg);
+        border: 1px solid;
+    } 
+}
+
+/*MAPS*/
+$fondoProducto: (
+    Pinturas: rgb(74, 100, 212),
+    Sanitarios:  lightgreen,
+    Ceramicos: lightpink,
+    Herramientas: rgb(235, 125, 141),
+    Alquieres: rgb(187, 11, 37),
+    Aridos: goldenrod,
+    Carpinteria: brown,
+    Herreria: grey,
+    Electricidad: blue
+);
+
+/*EACH aplicado en cada página con los artículos de productos"*/
+@each $producto, $color in $fondoProducto{
+    .divPreviaProducto__#{$producto}{
+        background-color: $color;
+    }
+}
+/*EACH aplicado en la página "Productos.html"*/
+@each $producto, $color in $fondoProducto{
+    .divProducto__#{$producto}--fondoColor{
+        background-color: $color;
+    }
+}
+
+/*MAXINS IF*/
+@mixin boton-form($tipo-boton)
+{
+    @if $tipo-boton{
+        background-color: $color-boton-aceptar;
+
+    } @else{
+        background-color: $color-boton-cancelar;
+    }
+}
+
+.boton{
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.boton__aceptar{
+    @include boton-form($tipo-boton: true);
+}
+.boton__cancelar{
+    @include boton-form($tipo-boton: false);
+}

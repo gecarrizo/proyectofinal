@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="descrption" content="Zona material es una empresa que desde hace 30 años se dedica a proveer los materiales necesarios para las diferentes etapas de una obra. Nuestros clientes pueden acercarse a nuestro salón de ventas y encontrar productos como pinturas, sanitarios y cerámicos y sanitarios entre muchas otras cosas..">
+    <meta name="keywords" content="zona material, materiales, herramientas, pinturas, sanitarios, cerámicos, carpinteria, hierros, maquinaria, aridos">
+
+    <title>ZONA MATERIAL - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="divMarcaCabecera">
+                    <a id="linkTituloCabecera" href="Index.html">ZONA MATERIAL</a>
+            </div>
+            
+            <!--<nav class="navbar navbar-expand-sm navbar-dark">-->
+            <nav class="navbar navbar-expand-md">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><img src="imagenes/infoCircleIcon.png" width="25px" height="25px"></a>
+
+                <button class="navbar-toggler bg-iconnav" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="institucional/Empresa.html">Empresa<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="productos/Productos.html" data-toggle="dropdown">Productos</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="productos/ProductoPinturas.html">Pinturas</a>
+                        <a class="dropdown-item" href="productos/ProductoSanitarios.html">Sanitarios</a>
+                        <a class="dropdown-item" href="productos/ProductoCeramicos.html">Cerámicos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="institucional/Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="institucional/Contacto.html">Contacto</a>
+                      </li>
+                 </ul>
+                </div>
+              </nav>
+
+            <!-- -->
+            <!-- Alternativa de button
+            <div class="divMenuCabecera btn-group">
+                <button type="button" class="btn">Empresa</button>
+                <div class="btn-group">
+                  <button type="button" onclick="window.location.href='Productos.html'" class="btn">Productos</button>
+                  <button type="button" class="btn dropdown-toggle dropdown-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </button>  
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="ProductoPinturas.html">Pinturas</a>
+                    <a class="dropdown-item" href="ProductoSanitarios.html">Sanitarios</a>
+                    <a class="dropdown-item" href="ProductoCeramicos.html">Cerámicos</a>
+                  </div>
+                </div>
+                <button type="button" onclick="window.location.href='Servicios.html'" class="btn">Servicios</button>
+                <button type="button" onclick="window.location.href='Contacto.html'" class="btn">Contacto</button>
+              </div>    
+            -->
+            <!-- Alternativa de div con menu
+            <div class="divMenuCabecera">
+                <div class="menu"><a href="Empresa.html">Empresa</a></div>
+                <div class="menu menuProductos"><a href="Productos.html">Productos</a>
+                    <div class="itemProducto"><a href="ProductoPinturas.html">Pinturas</a></div>
+                    <div class="itemProducto"><a href="ProductoSanitarios.html">Sanitarios</a></div>
+                    <div class="itemProducto"><a href="ProductoCeramicos.html">Cerámicos</a></div>     
+                </div>
+                <div class="menu"><a href="Servicios.html">Servicios</a></div>
+                <div class="menu"><a href="Contacto.html">Contacto</a></div>
+            </div>
+            -->
+        </div>
+        <div class="divBannerPagina">
+            <p class="tituloBannerPagina">Inicio</p>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="containerCarouselVariedad" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#containerCarouselVariedad" data-slide-to="0" class="active"></li>
+              <li data-target="#containerCarouselVariedad" data-slide-to="1"></li>
+              <li data-target="#containerCarouselVariedad" data-slide-to="2"></li>
+            </ul>
+
+            <div id="carouselVariedad" class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="rounded img-responsive imgVariedadCarousel" src="imagenes/banner/latasPinturas.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="rounded img-responsive imgVariedadCarousel" src="imagenes/banner/sanitarios.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="rounded img-responsive imgVariedadCarousel" src="imagenes/banner/ceramicos.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#containerCarouselVariedad" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#containerCarouselVariedad" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+         </div>
+        <div id="grid">
+        <!-- alternativa de grid -->
+            <titles id="tituloPromociones"><h1>Promociones</h1></titles>
+            <div id="promocion1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta1.jpg">
+            </div>
+            <div id="promocion2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta2.jpg">
+            </div>
+            <div id="promocion3" >
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta3.jpg">
+            </div>
+            <titles id="tituloProveedores"><h1>Proveedores</h1></titles>
+            <div id="proveedor1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/proveedores/proveedor1.jpg">
+            </div>
+            <div id="proveedor2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/proveedores/proveedor2.jpg">
+            </div>
+            <div id="proveedor3">
+                <img class="imgFlotante rounded  img-zoom img-responsive" src="imagenes/proveedores/proveedor3.jpg">
+            </div>
+
+            <titles id="tituloMateriales"><h1>Materiales de Seguridad</h1></titles>
+            <div id="material1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material1.jpg">
+            </div>
+            <div id="material2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material2.jpg">
+            </div>
+            <div id="material3">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material3.jpg">
+            </div>            
+        </div>
+    </div>
+
+    <!-- Usamos #GRID para la distribucion de los div en pagina inicial 
+    <div id=container>
+        <div id="grid">
+            <titles id="promociones"><h1>Promociones</h1></titles>
+            <div id="promocion1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta1.jpg">
+            </div>
+            <div id="promocion2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta2.jpg">
+            </div>
+            <div id="promocion3" >
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/promociones/oferta3.jpg">
+            </div>
+
+            <titles id="proveedores"><h1>Proveedores</h1></titles>
+            <div id="proveedor1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/proveedores/proveedor1.jpg">
+            </div>
+            <div id="proveedor2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/proveedores/proveedor2.jpg">
+            </div>
+            <div id="proveedor3">
+                <img class="imgFlotante rounded  img-zoom img-responsive" src="imagenes/proveedores/proveedor3.jpg">
+            </div>
+
+            <titles id="materiales"><h1>Materiales de Seguridad</h1></titles>
+            <div id="material1">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material1.jpg">
+            </div>
+            <div id="material2">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material2.jpg">
+            </div>
+            <div id="material3">
+                <img class="imgFlotante rounded img-zoom img-responsive" src="imagenes/seguridad/material3.jpg">
+            </div>            
+        </div>
+    </div>
+    -->
+
+    <!-- Usamos div con disposición normal
+    <div>
+        <article>
+            <div class="articulo">
+                <div class="itemArticulos">
+                    <div class="subArticuloCol">
+                        <a href="#">Promociones</a>
+                    </div>
+                    <div class="subArticuloCol">
+                        <a href="#">Proveedores</a>
+                    </div>
+                    <div class="subArticuloCol">
+                        <a href="#">Tutoriales</a>
+                    </div>
+                </div>    
+            </div>
+        </article>
+    </div> 
+    -->
+   
+    <!-- webpart modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">ZONA MATERIAL</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              Estimado cliente, nuestro horario de atención es de Lunes a Sábado de 08.00 hs a 17.00 hs.
+              Gracias por visitar nuestra página.
+              <div id="btnImportante" class="container mt-3">
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#msgImportante">IMPORTANTE</button>
+                <div id="msgImportante" class="collapse">
+                Cumplimos estrictamente con las normas y protocolos de bioseguridad frente al COVID-19 para protegerte a tí a tu familia.<br>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- -->
+
+    </body>
+    <div id="divFooter">
+        <p class="foo">Copyright...</p>.
+    </div>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*Var*/
+.divProducto1 {
+  background-image: url(../imagenes/productoPintura1.jpg);
+  border: 1px solid; }
+
+.divProducto2 {
+  background-image: url(../imagenes/productoPintura2.jpg);
+  border: 1px solid; }
+
+.divProducto3 {
+  background-image: url(../imagenes/productoPintura3.jpg);
+  border: 1px solid; }
+
+.divProducto4 {
+  background-image: url(../imagenes/productoPintura4.jpg);
+  border: 1px solid; }
+
+.divProducto5 {
+  background-image: url(../imagenes/productoPintura5.jpg);
+  border: 1px solid; }
+
+.divProducto6 {
+  background-image: url(../imagenes/productoPintura6.jpg);
+  border: 1px solid; }
+
+.divProducto7 {
+  background-image: url(../imagenes/productoPintura7.jpg);
+  border: 1px solid; }
+
+.divProducto8 {
+  background-image: url(../imagenes/productoPintura8.jpg);
+  border: 1px solid; }
+
+.divProducto9 {
+  background-image: url(../imagenes/productoPintura9.jpg);
+  border: 1px solid; }
+
+.divProducto10 {
+  background-image: url(../imagenes/productoPintura10.jpg);
+  border: 1px solid; }
+
+.divProducto11 {
+  background-image: url(../imagenes/productoPintura11.jpg);
+  border: 1px solid; }
+
+/*MAPS*/
+/*EACH aplicado en cada página con los artículos de productos"*/
+.divPreviaProducto__Pinturas {
+  background-color: #4a64d4; }
+
+.divPreviaProducto__Sanitarios {
+  background-color: lightgreen; }
+
+.divPreviaProducto__Ceramicos {
+  background-color: lightpink; }
+
+.divPreviaProducto__Herramientas {
+  background-color: #eb7d8d; }
+
+.divPreviaProducto__Alquieres {
+  background-color: #bb0b25; }
+
+.divPreviaProducto__Aridos {
+  background-color: goldenrod; }
+
+.divPreviaProducto__Carpinteria {
+  background-color: brown; }
+
+.divPreviaProducto__Herreria {
+  background-color: grey; }
+
+.divPreviaProducto__Electricidad {
+  background-color: blue; }
+
+/*EACH aplicado en la página "Productos.html"*/
+.divProducto__Pinturas--fondoColor {
+  background-color: #4a64d4; }
+
+.divProducto__Sanitarios--fondoColor {
+  background-color: lightgreen; }
+
+.divProducto__Ceramicos--fondoColor {
+  background-color: lightpink; }
+
+.divProducto__Herramientas--fondoColor {
+  background-color: #eb7d8d; }
+
+.divProducto__Alquieres--fondoColor {
+  background-color: #bb0b25; }
+
+.divProducto__Aridos--fondoColor {
+  background-color: goldenrod; }
+
+.divProducto__Carpinteria--fondoColor {
+  background-color: brown; }
+
+.divProducto__Herreria--fondoColor {
+  background-color: grey; }
+
+.divProducto__Electricidad--fondoColor {
+  background-color: blue; }
+
+/*MAXINS IF*/
+.boton {
+  border: none;
+  border-radius: 4px;
+  color: white; }
+
+.boton__aceptar {
+  background-color: #0fbd75; }
+
+.boton__cancelar {
+  background-color: #ee3232; }

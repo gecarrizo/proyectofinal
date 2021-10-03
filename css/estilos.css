@@ -1,0 +1,610 @@
+li{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;    
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.foo {
+    font-size: 15px;
+    color:white;
+}
+
+label{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+article{
+    width: 100%;    
+}
+#divFooter{
+    /*background-color:black;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(90deg,rgb(9, 9, 10) 30%, rgb(98, 98, 99) 50%);
+}
+
+#bannerProducto{
+    width: 100%;
+    height: 150px;
+    border: 0px 
+}
+
+#linkTituloCabecera{
+    color: coral;
+    font-size: 45px;
+}
+
+#listaMenuCabecera li{
+    display:inline;
+    padding-left:10px;
+    padding-right:3px;
+}
+
+#main{
+    height: 400px; /*100vh es toda la pantallax*/
+    margin: 2px;
+    padding: 2px;
+    flex: 1; /* reemplaza FLEX-GROW =1 y FLEX-SHRINK =1 osea se achica lo necesario o se agranda lo necesario respectivamente*/
+    display: flex;
+    flex-direction: row; /*column-reverse*/
+    align-content: center;
+    /*align-items: flex-start;
+    justify-content: flex-start;
+    */
+    border: 0px solid;
+}
+
+#entregaCamion{
+    position: absolute;
+    animation: entregaCamionArranca 2s normal infinite ; 
+}
+
+@keyframes entregaCamionArranca{
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.nav{
+    margin: 6px;
+    padding: 6px;
+    width: 200px;
+
+    border: 0px solid;
+}
+
+.divArticulo{
+    width: 99%;
+    height: 100%;
+    margin: 6px;
+    padding: 6px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-content: center;  
+    
+    border: 0px solid;  
+}
+
+.itemArticulos{
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    border: 0px solid;
+}
+.subArticuloCol{
+    width: 250px;
+    height: 100px;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    border: 0px solid;
+}
+
+.subArticuloRow{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    border: 0px solid;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    border: 0px solid;
+}
+
+.etiquetaFormItem{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.controlFormItem{
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    transition: all 2s;
+}
+
+input:focus{
+    font-size: 16px;
+}
+
+Select:focus{
+    font-size: 16px;
+}
+
+textarea:focus{
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: cadetblue;
+}
+
+button:focus{
+    font-size: 16px;
+}
+
+
+.rowFormItem{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.listaAdentro{
+    list-style-position: inside;
+}
+
+.imgFlotante {
+    float: left;
+    margin-left:15px;
+}
+
+.img-zoom:hover {
+    transform: scale(1.04);
+}
+
+.textoDescripcion{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.textoDescripcionSubrayado{
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform:uppercase;
+}
+
+.tituloMenuLateral{
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+.tituloBannerPagina{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divMenuCabecera{
+    height: 50px;
+    width: 500px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border: 0px solid;
+}
+
+.menu{
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-items: center;
+    border: 0px solid;
+}
+
+.menu a{
+    color: #000000;
+}
+
+.menuProductos{
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;  /*listo para usar flex*/
+    flex-direction: column; /*el contenido lo alinea en columna*/
+    align-items: center; /*alinea todo el contenido de CONTAINER (ej.ITEM) */
+}
+
+.navProductos{
+    margin: 4px;
+    padding: 4px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: flex-start;
+
+    border: 0px solid;
+}
+
+.navSubProductos{
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+    border: 0px solid;
+}
+
+.itemProducto{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px;
+    border-style: solid;
+    background-color:  coral;
+    display: none; /*no muestra nada*/    
+}
+
+.menuProductos:hover .itemProducto{ 
+    display: block;
+}
+
+.itemSubProducto{
+    height: 100%;
+    width: 130%;
+    margin: 2px;
+    padding: 2px;
+    border: 1px;
+    border-style: solid;
+    background-color:  coral;
+    display: none; /*no muestra nada*/  
+}
+
+.navSubProductos:hover .itemSubProducto{ 
+    display: block;
+}
+
+.divPreviaProducto{
+    padding: 35px;
+    margin: 10px;
+    display: flex; 
+    /*flex-wrap: wrap; se comoda en varias lineas pero lo cambio para la entrega. Objetivo aplicar "Transformacion"*/
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /*background-color: goldenrod; */ /* lo paso a SASS styless.css con metodologia BEM para fondo a cada producto en especial*/
+}
+
+.divPreviaProductoCeramico #producto1{
+    order: -1;
+}
+
+.imgPreviaProducto{
+    height: 80%;
+    width: 80%;
+}
+
+.imgPreviaProducto:hover{
+        transform: scale(2); /*aplico Transformación*/
+}
+
+.divMarcaCabecera{
+    height: 50px;
+    width: 400px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;    
+    position: relative;
+    float:left;
+    transition: 1s linear; /*cubic-bezier()*/
+
+    border: 0px solid;
+}
+
+.divMarcaCabecera:hover{
+    transform: perspective(150px) rotateY(45deg);  /*rotateY rota vertical*/
+}
+
+.subTituloPagina{
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    
+    border: 0px solid;
+}
+
+.parrafoClase{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.imgCssRedondo{
+    border: 5px solid crimson; 
+    border-color: crimson;
+    border-radius: 50px; 
+}
+
+.divBannerPagina{
+    height: 40px;
+    text-align: left;
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    /*background-image: url(../imagenes/fondoBanner.jpg) ;*/ /*Se reemplaza por un fondo gradiente*/
+    /*background-repeat: repeat;*/ /*Se reemplaza por un fondo gradiente*/
+    background: linear-gradient(90deg,rgb(10, 5, 163) 30%, rgb(46, 128, 209) 50%);
+}
+/* GRID */
+titles{
+    height: 100%;
+    width: 100%;
+    grid-area: titles;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+titles#tituloPromociones{
+    grid-area: tituloPromociones;
+}
+
+div#promocion1{
+    grid-area: promo1;
+}
+
+div#promocion2{
+    grid-area: promo2;
+}
+
+div#promocion3{
+    grid-area: promo3;
+}
+
+titles#tituloProveedores{
+    grid-area: tituloProveedores;
+}
+
+div#proveedor1{
+    grid-area: provee1;
+}
+
+div#proveedor2{
+    grid-area: provee2;
+}
+
+div#proveedor3{
+    grid-area: provee3;
+}
+
+titles#tituloMateriales{
+    grid-area: tituloMateriales;
+}
+
+div#material1{
+    grid-area: material1;
+}
+
+div#material2{
+    grid-area: material2;
+}
+
+div#material3{
+    grid-area: material3;
+}
+
+/* Aplicado en el index para la distribucion de area en grid de Promociones, Proveedores y Materiales*/
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: 120px 150px 120px 150px 120px 150px;*/
+    grid-template-rows: 120px 150px 120px 150px 120px 150px;
+
+    grid-gap: 5px;
+    grid-template-areas:
+    "tituloPromociones tituloPromociones tituloPromociones"
+    "promo1 promo2 promo3"
+    "tituloProveedores tituloProveedores tituloProveedores"
+    "provee1 provee2 provee3"
+    "tituloMateriales tituloMateriales tituloMateriales"
+    "material1 material2 material3"    ;
+
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+
+    border: 0px solid;
+}
+
+#grid>div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px solid;
+}
+
+#container{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+
+    border: 0px solid;
+}
+
+#carouselVariedad{
+    border: 0px solid;
+}
+
+.imgVariedadCarousel{
+    width: 90%;
+    height: 250px;
+}
+
+#containerCarouselVariedad{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    margin: 10px;
+    padding: 10px;
+
+    border: 0px solid;
+}
+
+#btnImportante{
+    padding: 10px;
+    margin: 10px;
+}
+/*Aplicado en pantalla pcipal de seccion "Productos"*/
+/*Grids mobile first*/
+.divProducto {
+/*    background-color: orange;*/  /*me lo llevo a SASS para personalizarlo desde ahi*/
+    color: white;
+    padding: 1rem;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+ }
+  
+.divProducto a{
+    color: white;
+}
+
+.divProductos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+   
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(6 6 6 / 50%);
+}
+
+@media (min-width: 600px) {
+   .divProductos { grid-template-columns: repeat(2, 1fr); }
+}
+  
+@media (min-width: 900px) {
+  .divProductos { grid-template-columns: repeat(3, 1fr); }
+}
+/*-----*/
+
+   
+/*Clase 10 - Responsive con Bootstrap encolumnado aplicado a index con Grid incorporado*/
+@media screen and (max-width: 780px) {
+    #grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    
+        grid-gap: 5px;
+        grid-template-areas:
+        "tituloPromociones"
+        "promo1" 
+        "promo2" 
+        "promo3"
+        "tituloProveedores"
+        "provee1"
+        "provee2"
+        "provee3"
+        "tituloMateriales"
+        "material1"
+        "material2"
+        "material3"    ;
+    
+        margin: 0;
+        align-content: stretch;
+        align-items: stretch;
+        text-align:center;
+    }
+}
+
