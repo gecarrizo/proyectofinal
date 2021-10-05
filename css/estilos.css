@@ -1,12 +1,12 @@
 li{
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-weight: bold;*/    
 }
 
 p{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p.foo {
@@ -16,7 +16,7 @@ p.foo {
 
 label{
     font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a{
@@ -30,6 +30,7 @@ body{
 article{
     width: 100%;    
 }
+
 #divFooter{
     /*background-color:black;*/
     position: fixed;
@@ -47,7 +48,7 @@ article{
 
 #linkTituloCabecera{
     color: coral;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 #listaMenuCabecera li{
@@ -57,7 +58,7 @@ article{
 }
 
 #main{
-    height: 400px; /*100vh es toda la pantallax*/
+    height: 100%; /*100vh es toda la pantallax*/
     margin: 2px;
     padding: 2px;
     flex: 1; /* reemplaza FLEX-GROW =1 y FLEX-SHRINK =1 osea se achica lo necesario o se agranda lo necesario respectivamente*/
@@ -82,8 +83,8 @@ article{
 }
 
 .nav{
-    margin: 6px;
-    padding: 6px;
+    margin: 0px;
+    padding: 0px;
     width: 200px;
 
     border: 0px solid;
@@ -92,15 +93,31 @@ article{
 .divArticulo{
     width: 99%;
     height: 100%;
-    margin: 6px;
-    padding: 6px;
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-    align-content: center;  
+    align-content: center;
+    align-items: center;  
     
     border: 0px solid;  
+}
+
+.divContent{
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    align-items: left;  
+    
+    border: 0px solid;
 }
 
 .itemArticulos{
@@ -122,7 +139,7 @@ article{
     margin: 2px;
     padding: 2px;
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     align-content: center;
     align-items: center;
@@ -147,7 +164,7 @@ article{
 }
 
 .form{
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 2px;
     padding: 2px;
@@ -167,14 +184,26 @@ article{
     align-content: center;
 }
 
+.mandatorioFormItem{
+    width: 10px;
+    display: flex;
+    align-content: center;
+    color: red;
+}
+
 .controlFormItem{
-    width: 200px;
+    width: 400px;
     margin: 2px;
     padding: 2px;
     display: flex;
     flex-direction: row;
     align-content: center;
     transition: all 2s;
+}
+
+.textOption{
+    font-size: 20px;
+    padding: 5px;
 }
 
 input:focus{
@@ -196,7 +225,6 @@ button:hover{
 button:focus{
     font-size: 16px;
 }
-
 
 .rowFormItem{
     width: 500px;
@@ -223,6 +251,12 @@ button:focus{
     text-align: justify;
 }
 
+.textoDescripcionInterlineado{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2.5;
+}
+
 .textoDescripcionSubrayado{
     font-size: 16px;
     text-align: justify;
@@ -232,14 +266,14 @@ button:focus{
 
 .tituloMenuLateral{
     font-size: 23px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: black;
 }
 
 .tituloBannerPagina{
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: white;
 }
@@ -267,9 +301,10 @@ button:focus{
     width: 150px;
     text-align: center;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     align-items: center;
+
     border: 0px solid;
 }
 
@@ -279,17 +314,17 @@ button:focus{
 
 .menuProductos{
     width: 150px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;  /*listo para usar flex*/
     flex-direction: column; /*el contenido lo alinea en columna*/
     align-items: center; /*alinea todo el contenido de CONTAINER (ej.ITEM) */
 }
 
 .navProductos{
-    margin: 4px;
-    padding: 4px;
-    width: 200px;
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-content: flex-start;
 
     border: 0px solid;
@@ -297,7 +332,7 @@ button:focus{
 
 .navSubProductos{
     width: 100px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     
     border: 0px solid;
@@ -333,17 +368,18 @@ button:focus{
     display: block;
 }
 
-.divPreviaProducto{
+.divGrupoProducto{
+    margin: 0px;
     padding: 35px;
-    margin: 10px;
     display: flex; 
     /*flex-wrap: wrap; se comoda en varias lineas pero lo cambio para la entrega. Objetivo aplicar "Transformacion"*/
     flex-flow: row nowrap;
     justify-content: space-between;
     /*background-color: goldenrod; */ /* lo paso a SASS styless.css con metodologia BEM para fondo a cada producto en especial*/
+    border: 0px solid;
 }
 
-.divPreviaProductoCeramico #producto1{
+.divGrupoProductoCeramico #producto1{
     order: -1;
 }
 
@@ -356,12 +392,42 @@ button:focus{
         transform: scale(2); /*aplico Transformación*/
 }
 
+.divPreviaProducto{
+    padding: 35px;
+    margin: 10px;
+    display: flex; 
+    /*flex-wrap: wrap; se comoda en varias lineas pero lo cambio para la entrega. Objetivo aplicar "Transformacion"*/
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /*background-color: goldenrod; */ /* lo paso a SASS styless.css con metodologia BEM para fondo a cada producto en especial*/
+}
+
+.divPreviaProducto:hover{
+    transform: scale(2); /*aplico Transformación*/
+}
+
+#prueba {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    background-color:  coral;
+    float:none;
+    display: none; /*no muestra nada*/   
+}
+    
+#p:hover +  #prueba{
+    display: flex;
+}
+
 .divMarcaCabecera{
     height: 50px;
     width: 400px;
     margin: 5px;
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
@@ -381,7 +447,7 @@ button:focus{
 .subTituloPagina{
     width: 100%;
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
@@ -402,11 +468,12 @@ button:focus{
 }
 
 .divBannerPagina{
-    height: 40px;
+    height: 30px;
     text-align: left;
-    padding: 40px 40px;
+    padding: 30px 30px;
     display: flex;
     align-items: center;
+    vertical-align: middle;
     /*background-image: url(../imagenes/fondoBanner.jpg) ;*/ /*Se reemplaza por un fondo gradiente*/
     /*background-repeat: repeat;*/ /*Se reemplaza por un fondo gradiente*/
     background: linear-gradient(90deg,rgb(10, 5, 163) 30%, rgb(46, 128, 209) 50%);
@@ -491,7 +558,7 @@ div#material3{
     text-align:center;
 
     font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     border: 0px solid;
 }
@@ -507,7 +574,7 @@ div#material3{
 
 #container{
     font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-content: center;
     align-items: center;
     text-align:center;
@@ -551,7 +618,8 @@ div#material3{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
+
+    border: 0px solid;
  }
   
 .divProducto a{
@@ -577,7 +645,6 @@ div#material3{
   .divProductos { grid-template-columns: repeat(3, 1fr); }
 }
 /*-----*/
-
    
 /*Clase 10 - Responsive con Bootstrap encolumnado aplicado a index con Grid incorporado*/
 @media screen and (max-width: 780px) {
@@ -607,4 +674,3 @@ div#material3{
         text-align:center;
     }
 }
-

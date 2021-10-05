@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta name="descrption" content="Productos de pinturería de alta calidad y variedad, y accesorios para el hogar y la industria. Atención al trabajador del rubro.">
     <meta name="keywords" content="zona material, pinturas, lacar, barnices, pintura latex, pintura agua, sintéticos, aguarras, removedores">
 
     <title>ZONA MATERIAL - Producto Pinturas</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/style.css"> <!-- SASS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="../assets/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -19,41 +24,68 @@
             <div class="divMarcaCabecera">
                     <a id="linkTituloCabecera" href="../Index.html">ZONA MATERIAL</a>
             </div>
-            <div class="divMenuCabecera">
-                <div class="menu"><a href="../institucional/Empresa.html">Empresa</a></div>
-                <div class="menu menuProductos"><a href="Productos.html">Productos</a>
-                    <div class="itemProducto"><a href="ProductoPinturas.html">Pinturas</a></div>
-                    <div class="itemProducto"><a href="ProductoSanitarios.html">Sanitarios</a></div>
-                    <div class="itemProducto"><a href="ProductoCeramicos.html">Cerámicos</a></div>     
+            <nav class="navbar navbar-expand-md">
+                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-iconnav" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../institucional/Empresa.html">Empresa<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="Productos.html" data-toggle="dropdown">Productos</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="#">Pinturas</a>
+                        <a class="dropdown-item" href="ProductoSanitarios.html">Sanitarios</a>
+                        <a class="dropdown-item" href="ProductoCeramicos.html">Cerámicos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../institucional/Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../institucional/Contacto.html">Contacto</a>
+                      </li>
+                 </ul>
                 </div>
-                <div class="menu"><a href="../institucional/Servicios.html">Servicios</a></div>
-                <div class="menu"><a href="../institucional/Contacto.html">Contacto</a></div>
-            </div>
+          </nav>
         </div>
         <div class="divBannerPagina">
             <p class="tituloBannerPagina">Productos</p>
         </div>
     </header>
-
     <div id="main">
         <nav class="nav">
             <div class="navProductos">
-                <div class="navSubProductos">Anticorrosivos
-                    <div class="itemSubProducto"><a href="#">Clásico</a></div>
-                    <div class="itemSubProducto"><a href="#">Duo</a></div>
-                </div>
-                <div class="navSubProductos">Interiores
-                    <div class="itemSubProducto"><a href="#">Madera</a></div>
-                    <div class="itemSubProducto"><a href="#">Metales</a></div>
-                    <div class="itemSubProducto"><a href="#">Paredes</a></div>
-                </div>
-                <div class="navSubProductos">Exteriores
-                    <div class="itemSubProducto"><a href="#">Madera</a></div>
-                    <div class="itemSubProducto"><a href="#">Metales</a></div>
-                    <div class="itemSubProducto"><a href="#">Paredes</a></div>
-                    <div class="itemSubProducto"><a href="#">Piletas</a></div>
-                    <div class="itemSubProducto"><a href="#">Ladrilos</a></div>
-                </div>                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">                
+                        <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Anticorrosivos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="#">Clásicos</a>
+                            <a class="dropdown-item" href="#">Duo</a>
+                        </div> 
+                    </li>
+                    <li class="nav-item">                
+                        <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Exteriores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="#">Madera</a>
+                            <a class="dropdown-item" href="#">Metales</a>
+                            <a class="dropdown-item" href="#">Paredes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">                
+                        <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Adhesivos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="#">Madera</a>
+                            <a class="dropdown-item" href="#">Metales</a>
+                            <a class="dropdown-item" href="#">Paredes</a>
+                            <a class="dropdown-item" href="#">Piletas</a>
+                            <a class="dropdown-item" href="#">Ladrillos</a>
+                        </div>
+                    </li>
+                </ul>
            </div>
         </nav>
         <article>
@@ -65,8 +97,11 @@
                     <div>
                         <img id="bannerProducto" src="../imagenes/banner/latasPinturas.jpg" alt="Artículos de pinturas">
                     </div>
-                    <div class="divPreviaProducto divPreviaProducto__Pinturas">
-                        <div><img class="imgPreviaProducto" src="../imagenes/productos/productoPintura1.jpg" alt="Producto Pintura 1"></div>
+                    <div class="divGrupoProducto divGrupoProducto__Pinturas">
+                        <div id="p">  
+                            <img class="imgPreviaProducto" src="../imagenes/productos/productoPintura1.jpg" alt="Producto Pintura 1">
+                        </div>
+                        <div id="prueba">I will show on hover</div>
                         <div><img class="imgPreviaProducto" src="../imagenes/productos/productoPintura2.jpg" alt="Producto Pintura 2"></div>
                         <div><img class="imgPreviaProducto" src="../imagenes/productos/productoPintura3.jpg" alt="Producto Pintura 3"></div>
                         <div><img class="imgPreviaProducto" src="../imagenes/productos/productoPintura4.jpg" alt="Producto Pintura 4"></div>
@@ -83,7 +118,8 @@
         </article>
     </div>
     <div id="divFooter">
-        <p class="foo">Copyright...</p>.
+        <p class="foo">Copyright © 2021, Zona Material</p>
     </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

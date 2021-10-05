@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
     <meta name="description" content="Nuestros servicios consisten:Asesoramiento para encontrar las soluciones más eficientes para nuestros clientes, entregas pautadas por etapas del proyecto, entregas de material elavorado, almacenamiento.">
     <meta name="keywords" content="zona material, pinturas, lacar, barnices, pintura latex, pintura agua, sintéticos, aguarras, removedores">
 
     <title>ZONA MATERIAL - Servicios</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/style.css"> <!-- SASS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,16 +23,33 @@
             <div class="divMarcaCabecera">
                     <a id="linkTituloCabecera" href="../Index.html">ZONA MATERIAL</a>
             </div>
-            <div class="divMenuCabecera">
-                <div class="menu"><a href="Empresa.html">Empresa</a></div>
-                <div class="menu menuProductos"><a href="../productos/Productos.html">Productos</a>
-                    <div class="itemProducto"><a href="../productos/ProductoPinturas.html">Pinturas</a></div>
-                    <div class="itemProducto"><a href="../productos/ProductoSanitarios.html">Sanitarios</a></div>
-                    <div class="itemProducto"><a href="../productos/ProductoCeramicos.html">Cerámicos</a></div>     
+            <nav class="navbar navbar-expand-md">
+                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-iconnav" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Empresa.html">Empresa<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="dropdown03" aria-expanded="false" aria-haspopup="true" href="productos/Productos.html" data-toggle="dropdown">Productos</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="../productos/ProductoPinturas.html">Pinturas</a>
+                        <a class="dropdown-item" href="../productos/ProductoSanitarios.html">Sanitarios</a>
+                        <a class="dropdown-item" href="../productos/ProductoCeramicos.html">Cerámicos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                      </li>
+                 </ul>
                 </div>
-                <div class="menu">Servicios</div>
-                <div class="menu"><a href="Contacto.html">Contacto</a></div>
-            </div>
+            </nav>
         </div>
         <div class="divBannerPagina">
             <p class="tituloBannerPagina">Servicios</p>
@@ -38,7 +59,7 @@
         <article>
             <div class="divArticulo">
                 <div>
-                    <p class="textoDescripcion"><!--<img id="entregaCamion" class="imgFlotante" src="../imagenes/entregas.jpg">-->Con más de 30 años de experiencia nos posicionan como el mejor socio estratégico para los trabajadores de la construcción y el consumidor final. 
+                    <p class="textoDescripcion">Con más de 30 años de experiencia nos posicionan como el mejor socio estratégico para los trabajadores de la construcción y el consumidor final. 
                         Nuestros servicios consisten:</p>
                         <ul class="listaAdentro">
                             <li>Asesoramiento para encontrar las soluciones más eficientes para nuestros clientes.</li>
@@ -54,7 +75,8 @@
         </article>
     </div>
     <div id="divFooter">
-        <p class="foo">Copyright...</p>.
+        <p class="foo">Copyright © 2021, Zona Material</p>
     </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

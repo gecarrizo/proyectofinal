@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
     <meta name="descrption" content="Productos y accesorios de alta calidad y variedad para el hogar. Atención a trabajadores del rubro.">
     <meta name="keywords" content="zona material, materiales, herramientas, pinturas, sanitarios, cerámicos, carpinteria, hierros, maquinaria, aridos">
 
@@ -19,40 +23,38 @@
             <div class="divMarcaCabecera">
                     <a id="linkTituloCabecera" href="../Index.html">ZONA MATERIAL</a>
             </div>
-            <div class="divMenuCabecera">
-                <div class="menu"><a href="../institucional/Empresa.html">Empresa</a></div>
-                <div class="menu menuProductos">Productos
-                    <div class="itemProducto"><a href="ProductoPinturas.html">Pinturas</a></div>
-                    <div class="itemProducto"><a href="ProductoSanitarios.html">Sanitarios</a></div>
-                    <div class="itemProducto"><a href="ProductoCeramicos.html">Cerámicos</a></div>     
+            <nav class="navbar navbar-expand-md">
+                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-iconnav" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../institucional/Empresa.html"></a>Empresa<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      Productos
+                      <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="ProductoPinturas.html">Pinturas</a>
+                        <a class="dropdown-item" href="ProductoSanitarios.html">Sanitarios</a>
+                        <a class="dropdown-item" href="ProductoCeramicos.html">Cerámicos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../institucional/Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../institucional/Contacto.html">Contacto</a>
+                      </li>
+                 </ul>
                 </div>
-                <div class="menu"><a href="../institucional/Servicios.html">Servicios</a></div>
-                <div class="menu"><a href="../institucional/Contacto.html">Contacto</a></div>
-            </div>
+          </nav>
         </div>
         <div class="divBannerPagina">
             <p class="tituloBannerPagina">Productos</p>
         </div>
     </header>
-    <!--
-    <div>
-        <article>
-            <div class="articulo">
-                <div class="itemArticulos">
-                    <div class="subArticuloCol">
-                        <a href="ProductoPinturas.html">Pinturas</a>
-                    </div>
-                    <div class="subArticuloCol">
-                        <a href="ProductoSanitarios.html">Sanitarios</a>
-                    </div>
-                    <div class="subArticuloCol">
-                        <a href="ProductoCeramicos.html">Cerámicos</a>
-                    </div>
-                </div>    
-            </div>
-        </article>
-    </div>
-   -->
    <div>
     <article>
         <div class="divArticulo"> 
@@ -71,7 +73,8 @@
 </article>
 </div>
     <div id="divFooter">
-        <p class="foo">Copyright...</p>.
+        <p class="foo">Copyright © 2021, Zona Material</p>
     </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

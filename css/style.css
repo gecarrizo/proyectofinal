@@ -46,31 +46,32 @@
 
 /*MAPS*/
 /*EACH aplicado en cada página con los artículos de productos"*/
-.divPreviaProducto__Pinturas {
+
+.divGrupoProducto__Pinturas {
   background-color: #4a64d4; }
 
-.divPreviaProducto__Sanitarios {
+.divGrupoProducto__Sanitarios {
   background-color: lightgreen; }
 
-.divPreviaProducto__Ceramicos {
+.divGrupoProducto__Ceramicos {
   background-color: lightpink; }
 
-.divPreviaProducto__Herramientas {
+.divGrupoProducto__Herramientas {
   background-color: #eb7d8d; }
 
-.divPreviaProducto__Alquieres {
+.divGrupoProducto__Alquieres {
   background-color: #bb0b25; }
 
-.divPreviaProducto__Aridos {
+.divGrupoProducto__Aridos {
   background-color: goldenrod; }
 
-.divPreviaProducto__Carpinteria {
+.divGrupoProducto__Carpinteria {
   background-color: brown; }
 
-.divPreviaProducto__Herreria {
+.divGrupoProducto__Herreria {
   background-color: grey; }
 
-.divPreviaProducto__Electricidad {
+.divGrupoProducto__Electricidad {
   background-color: blue; }
 
 /*EACH aplicado en la página "Productos.html"*/
