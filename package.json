@@ -4,15 +4,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/_navbar.scss css/navbar.css",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.13"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gecarrizo/proyectocoderhouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gecarrizo/proyectocoderhouse/issues"
+  },
+  "homepage": "https://github.com/gecarrizo/proyectocoderhouse#readme",
   "description": ""
 }
